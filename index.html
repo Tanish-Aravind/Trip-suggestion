@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndianExplorer | Your Journey Begins</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="split-container">
+        <section class="left-side">
+            <header>
+                <div class="logo">Indian<span>Explorer</span></div>
+            </header>
+
+            <div class="content-wrapper">
+                <h1>Where to next?</h1>
+                <p>Select a state to discover the most popular destinations, hidden gems, and travel tips.</p>
+
+                <form id="stateForm">
+                    <div class="input-group">
+                        <label for="stateSelect">Pick a State</label>
+                        <select id="stateSelect" required>
+                            <option value="" disabled selected>Select an Indian State...</option>
+                            
+                            <optgroup label="North India">
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Himachal">Himachal Pradesh</option>
+                                <option value="Ladakh">Ladakh</option>
+                            </optgroup>
+
+                            <optgroup label="South India">
+                                <option value="Kerala">Kerala</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Karnataka">Karnataka</option>
+                            </optgroup>
+
+                            <optgroup label="West & Central">
+                                <option value="Goa">Goa</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Gujarat">Gujarat</option>
+                            </optgroup>
+
+                            <optgroup label="East & North East">
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">Explore Destinations</button>
+                </form>
+            </div>
+
+            <footer>
+                <p>&copy; 2026 IndianExplorer | Plan your Indian Odyssey</p>
+            </footer>
+        </section>
+
+        <section class="right-side">
+            <div class="overlay-text">
+                <span>Featured: Scenic India</span>
+            </div>
+        </section>
+    </div>
+
+    <script src="resources\js\script.js"></script>
+</body>
+</html>

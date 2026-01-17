@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | IndianExplorer</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #e67e22; --dark: #2d3436; }
+        body { background-color: #f4f7f6; font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .header-section { text-align: center; margin-bottom: 50px; }
+        .header-section h1 { font-size: 3rem; color: var(--dark); margin-bottom: 10px; }
+        .back-btn { text-decoration: none; color: var(--primary); font-weight: 600; display: inline-block; margin-bottom: 20px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        /* The Card */
+        .place { background: #fff; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display: none; transition: 0.3s; }
+        .place:hover { transform: translateY(-10px); }
+        .place-info { padding: 20px; }
+        .place-info h3 { margin: 0 0 10px 0; color: var(--dark); }
+        .place-info p { color: #636e72; font-size: 0.9rem; line-height: 1.5; margin: 0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="back-btn">← Back to Search</a>
+    
+    <div class="header-section">
+        <h1 id="stateHeading">Destinations</h1>
+        <p>Discover the 5 must-visit attractions in this state.</p>
+    </div>
+
+    <div class="grid" id="mainGrid">
+        
+        <div class="place Rajasthan">
+            <div class="place-info"><h3>Hawa Mahal</h3><p>The iconic 'Palace of Winds' in Jaipur with 953 windows.</p></div>
+        </div>
+        <div class="place Rajasthan">
+            <div class="place-info"><h3>Amber Fort</h3><p>Majestic hilltop fort featuring stunning Hindu-style architecture.</p></div>
+        </div>
+        <div class="place Rajasthan">
+            <div class="place-info"><h3>City Palace, Udaipur</h3><p>Beautiful palace complex reflecting the glory of Mewar.</p></div>
+        </div>
+        <div class="place Rajasthan">
+            <div class="place-info"><h3>Jaisalmer Fort</h3><p>The 'Golden Fort' that rises from the heart of the Thar Desert.</p></div>
+        </div>
+        <div class="place Rajasthan">
+            <div class="place-info"><h3>Mehrangarh Fort</h3><p>One of the largest forts in India, overlooking Jodhpur.</p></div>
+        </div>
+
+        <div class="place Kerala">
+            <div class="place-info"><h3>Munnar</h3><p>Emerald green tea plantations and misty mountains.</p></div>
+        </div>
+        <div class="place Kerala">
+            <div class="place-info"><h3>Alleppey Backwaters</h3><p>Iconic houseboat stays on tranquil tropical canals.</p></div>
+        </div>
+        <div class="place Kerala">
+            <div class="place-info"><h3>Varkala Beach</h3><p>A unique cliff-side beach offering stunning sunset views.</p></div>
+        </div>
+        <div class="place Kerala">
+            <div class="place-info"><h3>Periyar National Park</h3><p>Famous for its elephant reserve and spice plantations.</p></div>
+        </div>
+        <div class="place Kerala">
+            <div class="place-info"><h3>Athirappilly Falls</h3><p>Majestic waterfall often called the Niagara of India.</p></div>
+        </div>
+
+        <div class="place Uttar-Pradesh">
+            <div class="place-info"><h3>Taj Mahal</h3><p>The world's most famous monument of love in Agra.</p></div>
+        </div>
+        <div class="place Uttar-Pradesh">
+            <div class="place-info"><h3>Varanasi Ghats</h3><p>The spiritual capital of India on the holy Ganges.</p></div>
+        </div>
+        <div class="place Uttar-Pradesh">
+            <div class="place-info"><h3>Fatehpur Sikri</h3><p>An abandoned Mughal city made of red sandstone.</p></div>
+        </div>
+        <div class="place Uttar-Pradesh">
+            <div class="place-info"><h3>Bara Imambara</h3><p>Architectural marvel and a labyrinth (Bhulbhulaiya).</p></div>
+        </div>
+        <div class="place Uttar-Pradesh">
+            <div class="place-info"><h3>Kushinagar</h3><p>Crucial Buddhist pilgrimage site where Lord Buddha passed away.</p></div>
+        </div>
+
+        <div class="place Himachal">
+            <div class="place-info"><h3>Rohtang Pass</h3><p>A high-altitude snow paradise near Manali.</p></div>
+        </div>
+        <div class="place Himachal">
+            <div class="place-info"><h3>Mall Road, Shimla</h3><p>The bustling heart of the colonial-era capital.</p></div>
+        </div>
+        <div class="place Himachal">
+            <div class="place-info"><h3>Spiti Valley</h3><p>Stunning cold desert landscapes and ancient monasteries.</p></div>
+        </div>
+        <div class="place Himachal">
+            <div class="place-info"><h3>McLeod Ganj</h3><p>Spiritual home of the Dalai Lama in Dharamshala.</p></div>
+        </div>
+        <div class="place Himachal">
+            <div class="place-info"><h3>Kasol</h3><p>Charming village known for its river views and trekkers' trails.</p></div>
+        </div>
+
+        <div class="place Ladakh">
+            <div class="place-info"><h3>Pangong Tso</h3><p>Crystal clear lake that shifts colors from blue to green.</p></div>
+        </div>
+        <div class="place Ladakh">
+            <div class="place-info"><h3>Nubra Valley</h3><p>High altitude desert with double-humped camels.</p></div>
+        </div>
+        <div class="place Ladakh">
+            <div class="place-info"><h3>Leh Palace</h3><p>A former royal palace offering panoramic mountain views.</p></div>
+        </div>
+        <div class="place Ladakh">
+            <div class="place-info"><h3>Magnetic Hill</h3><p>A gravity hill where vehicles appear to roll uphill.</p></div>
+        </div>
+        <div class="place Ladakh">
+            <div class="place-info"><h3>Thiksey Monastery</h3><p>Beautiful monastery resembling the Potala Palace of Tibet.</p></div>
+        </div>
+
+        <div class="place Tamil-Nadu">
+            <div class="place-info"><h3>Meenakshi Temple</h3><p>Vibrant temple towers in Madurai, a cultural landmark.</p></div>
+        </div>
+        <div class="place Tamil-Nadu">
+            <div class="place-info"><h3>Ooty</h3><p>Colonial-era hill station famous for its toy train.</p></div>
+        </div>
+        <div class="place Tamil-Nadu">
+            <div class="place-info"><h3>Kanyakumari</h3><p>The southernmost tip of India where three seas meet.</p></div>
+        </div>
+        <div class="place Tamil-Nadu">
+            <div class="place-info"><h3>Mahabalipuram</h3><p>Ancient rock-cut Shore Temples on the coast.</p></div>
+        </div>
+        <div class="place Tamil-Nadu">
+            <div class="place-info"><h3>Rameswaram</h3><p>Sacred island town connected by the Pamban Bridge.</p></div>
+        </div>
+
+        <div class="place Karnataka">
+            <div class="place-info"><h3>Hampi</h3><p>The ruins of the Vijayanagara Empire, a UNESCO site.</p></div>
+        </div>
+        <div class="place Karnataka">
+            <div class="place-info"><h3>Mysore Palace</h3><p>One of the most magnificent royal palaces in India.</p></div>
+        </div>
+        <div class="place Karnataka">
+            <div class="place-info"><h3>Coorg</h3><p>Known for its lush coffee plantations and Kodava culture.</p></div>
+        </div>
+        <div class="place Karnataka">
+            <div class="place-info"><h3>Gokarna</h3><p>Serene beaches and a major pilgrimage center.</p></div>
+        </div>
+        <div class="place Karnataka">
+            <div class="place-info"><h3>Jog Falls</h3><p>One of the tallest untiered waterfalls in the country.</p></div>
+        </div>
+
+        <div class="place Goa">
+            <div class="place-info"><h3>Palolem Beach</h3><p>Calm crescent beach in South Goa for relaxation.</p></div>
+        </div>
+        <div class="place Goa">
+            <div class="place-info"><h3>Basilica of Bom Jesus</h3><p>Stunning Portuguese-era Baroque church.</p></div>
+        </div>
+        <div class="place Goa">
+            <div class="place-info"><h3>Dudhsagar Falls</h3><p>Massive 'Sea of Milk' waterfall accessible by jeep.</p></div>
+        </div>
+        <div class="place Goa">
+            <div class="place-info"><h3>Fort Aguada</h3><p>17th-century lighthouse with Arabian Sea views.</p></div>
+        </div>
+        <div class="place Goa">
+            <div class="place-info"><h3>Anjuna Market</h3><p>Famous flea market and lively beach nightlife.</p></div>
+        </div>
+
+        <div class="place Maharashtra">
+            <div class="place-info"><h3>Gateway of India</h3><p>Mumbai's most famous landmark by the sea.</p></div>
+        </div>
+        <div class="place Maharashtra">
+            <div class="place-info"><h3>Ajanta Caves</h3><p>Ancient Buddhist rock-cut monasteries and paintings.</p></div>
+        </div>
+        <div class="place Maharashtra">
+            <div class="place-info"><h3>Lonavala</h3><p>Picturesque hill station near Mumbai and Pune.</p></div>
+        </div>
+        <div class="place Maharashtra">
+            <div class="place-info"><h3>Mahabaleshwar</h3><p>Known for its strawberry farms and lush viewpoints.</p></div>
+        </div>
+        <div class="place Maharashtra">
+            <div class="place-info"><h3>Shirdi</h3><p>Major pilgrimage center dedicated to Sai Baba.</p></div>
+        </div>
+
+        <div class="place Gujarat">
+            <div class="place-info"><h3>Rann of Kutch</h3><p>The largest salt desert in the world.</p></div>
+        </div>
+        <div class="place Gujarat">
+            <div class="place-info"><h3>Statue of Unity</h3><p>The tallest statue in the world, dedicated to Vallabhbhai Patel.</p></div>
+        </div>
+        <div class="place Gujarat">
+            <div class="place-info"><h3>Gir National Park</h3><p>The only natural habitat of the Asiatic Lion.</p></div>
+        </div>
+        <div class="place Gujarat">
+            <div class="place-info"><h3>Somnath Temple</h3><p>Sacred temple on the coast, rebuilt many times through history.</p></div>
+        </div>
+        <div class="place Gujarat">
+            <div class="place-info"><h3>Sabarmati Ashram</h3><p>Historic home of Mahatma Gandhi during the independence movement.</p></div>
+        </div>
+
+        <div class="place Sikkim">
+            <div class="place-info"><h3>Tsomgo Lake</h3><p>Breathtaking glacial lake at a very high altitude.</p></div>
+        </div>
+        <div class="place Sikkim">
+            <div class="place-info"><h3>Nathula Pass</h3><p>Major mountain pass on the Indo-China border.</p></div>
+        </div>
+        <div class="place Sikkim">
+            <div class="place-info"><h3>Pelling</h3><p>Offers close-up views of the massive Kanchenjunga peak.</p></div>
+        </div>
+        <div class="place Sikkim">
+            <div class="place-info"><h3>Gurudongmar Lake</h3><p>A sacred high-altitude lake near the Tibetan border.</p></div>
+        </div>
+        <div class="place Sikkim">
+            <div class="place-info"><h3>Rumtek Monastery</h3><p>Dharma Chakra Centre, a key Tibetan Buddhist site.</p></div>
+        </div>
+
+        <div class="place Meghalaya">
+            <div class="place-info"><h3>Living Root Bridges</h3><p>Bridges grown from tree roots by the local Khasi tribe.</p></div>
+        </div>
+        <div class="place Meghalaya">
+            <div class="place-info"><h3>Dawki River</h3><p>Famous for its crystal clear water and boat rides.</p></div>
+        </div>
+        <div class="place Meghalaya">
+            <div class="place-info"><h3>Shillong Peak</h3><p>Highest point in the state offering views of the city.</p></div>
+        </div>
+        <div class="place Meghalaya">
+            <div class="place-info"><h3>Nohkalikai Falls</h3><p>The tallest plunge waterfall in the country.</p></div>
+        </div>
+        <div class="place Meghalaya">
+            <div class="place-info"><h3>Mawsynram</h3><p>The wettest place on Earth, lush and green year-round.</p></div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    // 1. Get state from URL (index.html sent it here)
+    const urlParams = new URLSearchParams(window.location.search);
+    const chosenState = urlParams.get('state');
+
+    // 2. Change space to dash for CSS classes (e.g. "Uttar Pradesh" to "Uttar-Pradesh")
+    const formattedClass = chosenState ? chosenState.replace(/\s+/g, '-') : "";
+
+    // 3. Update Title
+    if (chosenState) {
+        document.getElementById('stateHeading').innerText = "Must Visit in " + chosenState;
+    }
+
+    // 4. Show only the cards that match the selected state
+    const allPlaces = document.getElementsByClassName('place');
+    let found = false;
+
+    for (let i = 0; i < allPlaces.length; i++) {
+        if (allPlaces[i].classList.contains(formattedClass)) {
+            allPlaces[i].style.display = "block";
+            found = true;
+        } else {
+            allPlaces[i].style.display = "none";
+        }
+    }
+
+    // 5. Handle cases where no state is found
+    if (!found) {
+        document.getElementById('mainGrid').innerHTML = "<p style='grid-column: 1/-1; text-align:center;'>More destinations coming soon!</p>";
+    }
+</script>
+
+</body>
+</html>
