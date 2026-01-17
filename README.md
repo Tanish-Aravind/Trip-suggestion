@@ -15,18 +15,6 @@ IndianExplorer is a multi-page web application designed to provide users with cu
 - Vanilla JavaScript: Managed event handling, page redirection, and DOM manipulation for content filtering.
 - Windows: The primary operating system for development and file management.
 
-## File Directory
-/trip-suggestion
-|-- index.html           # Home page with state selection
-|-- destination.html     # Results page for tourist attractions
-|-- /resources
-    |-- /css
-        |-- style.css    # Global stylesheet and responsive design
-    |-- /img
-        |-- bg-img.png   # High-resolution assets
-    |-- /js
-        |-- script.js    # Application logic for navigation and filtering
-
 ## How to Run
 1. Clone or download the project folder to your local machine.
 2. Ensure the file structure remains intact as per the directory listed above.
